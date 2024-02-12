@@ -1,4 +1,4 @@
-#pragma once
+//pragma once
 
 template <typename T> class BST;
 template <typename T> class  Node;
@@ -22,7 +22,7 @@ template <typename T> class Node
 		short size;
 
 	private:
-		#create new node
+		//create new node
 		void add(T newValue) {
 			std::hash<T> ke;
 			short hashed = ke(newValue);
@@ -59,7 +59,7 @@ template <typename T> class Node
 			}
 		}
 
-		#check if value is already in tree
+		//check if value is already in tree
 		bool is_present(T w)
 		{
 			std::hash<T> want;
@@ -80,7 +80,7 @@ template <typename T> class Node
 			return false;
 		}
 
-		#delete node
+		//delete node
 		void remove(Node*& root, short k)
 		{
 			Node* parent = nullptr;
@@ -145,7 +145,7 @@ template <typename T> class Node
 			}
 		}
 
-		#get smallest value in tree
+		//get smallest value in tree
 		T minimum() 
 		{
 			if (left_ == nullptr) {
